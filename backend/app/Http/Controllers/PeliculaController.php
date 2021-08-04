@@ -18,7 +18,7 @@ class PeliculaController extends ApiController
             ->select('idPelicula', 'nombre', 'img')
             ->get();
 
-        return $this->sendResponse($Peliculas, "Peliculas obtenidas correctamente");
+        return $Peliculas;
         // return $this->sendError("Error Conocido", "Error controlado", 200);
     }
 

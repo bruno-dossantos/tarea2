@@ -1,10 +1,11 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-default navbar-static-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="./index.jsx">
+        <a className="navbar-brand" href="./inicio.jsx">
           Peliculas
         </a>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
