@@ -8,7 +8,7 @@ p,
 label,
 a {
   color: white !important;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   text-decoration: none !important;
 }
 
@@ -17,13 +17,13 @@ input {
   margin-bottom: 10px !important;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type="number"] {
+input[type='number'] {
   -moz-appearance: textfield;
 }
 
@@ -42,4 +42,30 @@ input[type="number"] {
 
 .body {
   background-color: black !important;
+}
+
+.index-img {
+  padding-right: 0;
+}
+
+.index-btn {
+  background-color: #0092c9 !important;
+}
+
+.index-subtitle {
+  color: black !important;
+  text-align: justify;
+}
+
+.index-title {
+  color: black !important;
+  text-align: center;
+}
+
+.index-bg{
+  background: white;
+}
+
+.form-group{
+  margin-top: 120px;
 }

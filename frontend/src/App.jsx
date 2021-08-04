@@ -1,11 +1,14 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import './App.css';
 import React from 'react';
-import Navbar from './components/Navbar';
+import Inicio from './components/Inicio';
+import Get from './components/Get';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Inicio />
+      <Get />
     </div>
   );
 }
