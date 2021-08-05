@@ -5,24 +5,24 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-default navbar-static-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="./Inicio.jsx">
-          Peliculas
+        <a className="navbar-brand" href="frontend\src\components\Inicio.jsx">
+          Movies
         </a>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link" href="./Get.jsx">
-                Ver todas
+                Get all
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="./Show.jsx">
-                Ver por ID
+                Get
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="./Post.jsx">
-                Publicar una
+                Post
               </a>
             </li>
           </ul>
