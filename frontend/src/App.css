@@ -27,6 +27,11 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
+.section{
+  margin-top: 80px;
+  height: 80vh;
+}
+
 .btn {
   margin-top: 10px;
   background-color: #0092a4 !important;
@@ -66,6 +71,7 @@ input[type='number'] {
   background: white;
 }
 
-.form-group{
-  margin-top: 120px;
+/* .form-group{
+  margin-top: 200px;
 }
+ */

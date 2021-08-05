@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default class Get extends React.Component {
+export default class Show extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -9,7 +9,7 @@ export default class Get extends React.Component {
 
   render() {
     return (
-      <div id="3" className="section container-fluid">
+      <div id="2" className="section container-fluid">
         <div className="row justify-content-center align-items-center">
           <div className="col-6 ">
             <form className="form-group" action="">
@@ -17,24 +17,18 @@ export default class Get extends React.Component {
                 style={{ textAlign: 'center' }}
                 className="d-flex flex-row justify-content-center"
               >
-                Post movie
+                Get movie
               </h1>
               <input
                 autoComplete="off"
                 required
-                type="text"
-                placeholder="Name"
+                type="number"
+                placeholder="ID"
                 className="form-control"
-                name="nameMovie"
+                name="idMovie"
               />
               {' '}
-              <input
-                autoComplete="off"
-                type="url"
-                placeholder="Image"
-                className="form-control"
-                name="imgMovie"
-              />
+              <br />
               <button type="submit" className="btn">
                 Ready
               </button>
