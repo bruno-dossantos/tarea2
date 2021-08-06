@@ -1,13 +1,12 @@
-body,
-ul {
-  background-color: #072028 !important;
+body {
+  background: #f5f6f7 !important;
 }
 
 h1,
 p,
 label,
 a {
-  color: white !important;
+  color: #1f2667 !important;
   font-family: 'Rubik', sans-serif;
   text-decoration: none !important;
 }
@@ -27,14 +26,17 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
-.section{
-  margin-top: 80px;
-  height: 80vh;
+li.nav-item {
+  padding: 0 20px 0 0;
+}
+
+.section {
+  margin-top: 200px;
 }
 
 .btn {
   margin-top: 10px;
-  background-color: #0092a4 !important;
+  background-color: #1f2667 !important;
   border: none;
   color: white !important;
 }
@@ -43,10 +45,6 @@ input[type='number'] {
   background-size: cover !important;
   height: 100vh !important;
   width: 100% !important;
-}
-
-.body {
-  background-color: black !important;
 }
 
 .index-img {
@@ -67,11 +65,20 @@ input[type='number'] {
   text-align: center;
 }
 
-.index-bg{
+.index-bg {
   background: white;
 }
 
-/* .form-group{
-  margin-top: 200px;
+.container-form {
+  flex: 0 0 auto;
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  height: 250px;
+  box-shadow: violet;
+  box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 20%);
 }
- */
+
+.form-group {
+  margin-top: 30px;
+}

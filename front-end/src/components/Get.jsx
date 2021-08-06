@@ -22,7 +22,7 @@ export default class Get extends React.Component {
     return (
       <div id="1" className="section container-fluid">
         <div className="row justify-content-center align-items-center">
-          <div className="col-6 ">
+          <div className="col-6 container-form">
             <div className="form-group">
               <h1
                 style={{ textAlign: 'center' }}
@@ -34,7 +34,7 @@ export default class Get extends React.Component {
               <div className="d-flex justify-content-center">
                 <select required className="form-select form-select-sm">
                   {movies.map(() => (
-                    <option>{movies.nombre}</option>
+                    <option value={movies.nombre} key={movies.idPeliculas}>{movies.nombre}</option>
                   ))}
                 </select>
               </div>
