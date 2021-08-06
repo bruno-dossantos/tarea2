@@ -31,11 +31,15 @@ export default class Get extends React.Component {
               >
                 Get all movies
               </h1>
-              <p style={{ marginTop: '15px' }}>List of movies</p>
+              <p style={{ marginTop: '15px' }}>List of movies (Name - ID)</p>
               <div className="d-flex justify-content-center">
                 <select required className="form-select form-select-sm">
                   {movies.map(() => (
-                    <option value={movies.nombre} key={movies.idPeliculas}>{movies.nombre}</option>
+                    <option>
+                      {movies.nombre}
+                      -
+                      {movies.idPelicula}
+                    </option>
                   ))}
                 </select>
               </div>
