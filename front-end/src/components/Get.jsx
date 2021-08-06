@@ -34,11 +34,11 @@ export default class Get extends React.Component {
               <p style={{ marginTop: '15px' }}>List of movies (Name - ID)</p>
               <div className="d-flex justify-content-center">
                 <select required className="form-select form-select-sm">
-                  {movies.map(() => (
+                  {movies.map((movie) => (
                     <option>
-                      {movies.nombre}
+                      {movie.nombre}
                       -
-                      {movies.idPelicula}
+                      {movie.idPelicula}
                     </option>
                   ))}
                 </select>
