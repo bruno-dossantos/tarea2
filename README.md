@@ -20,8 +20,9 @@ Mira **[Instalación](https://github.com/DosSantosBrunoo/tarea2/blob/README/READ
 * [XAMPP](https://www.apachefriends.org/es/index.html)
 * [VsCode](https://code.visualstudio.com)
 * [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-
-
+* [node](https://nodejs.org/es/download/)
+* [composer](https://getcomposer.org/)
+* [postman](https://www.postman.com/downloads/)
 ### Instalación 🔧
 
 Ejecutar `XAMPP` e iniciar los servicios de `Apache` y `MySQL`\
