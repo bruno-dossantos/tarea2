@@ -27,10 +27,10 @@ export default function App() {
                   <Link to="/">Get all </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/post">Get</Link>
+                  <Link to="/post">Post</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/show">Post</Link>
+                  <Link to="/show">Get</Link>
                 </li>
               </ul>
             </div>
