@@ -12,7 +12,7 @@ Para comenzar es necesario que clonemos este repo en direcctorio root de Apache
 ### MacOS
 `/Applications/XAMP/htdocs`
 
-Mira **[Instalación](https://github.com/DosSantosBrunoo/tarea2/blob/README/README.md#instalación-)** para conocer como desplegar el proyecto.
+Mira **[Instalación](https://github.com/bruno-dossantos/tarea2/blob/README/README.md#instalación-)** para conocer como desplegar el proyecto.
 
 
 ### Pre-requisitos 📋
@@ -30,21 +30,15 @@ Entrar a esta url `http://localhost/phpmyadmin/`\
 Crear una Base de Datos en MySQL llamada “peliculas” con las siguiente tabla:
 
 ### pelicula
-  idUsuario INT\
-  nombre VARCHAR\
-  apellido VARCHAR\
-  fechaNacimiento DATE\
-  telefono VARCHAR\
-  idGrupo INT\
-  activo TINYINT(1)\
+  idPelicula int\
+  nombre varchar\
+  img varchar\
+  activo tinyint\
 
-Cargar los datos del adjunto “Datos.xlsx” en las tablas “Usuario” y “Grupo”:
-[Datos.xlsx](https://github.com/DosSantosBrunoo/agenda_covid/files/6317387/Datos.xlsx)
-También puedes usar este script para que cree todas las tablas y agregue los datos:
-[agenda_covid.txt](https://github.com/DosSantosBrunoo/agenda_covid/files/6317480/agenda_covid.txt)
-Acuerdese de cambiar la extension del archivo a `sql`
 
-Entrar a esta [url](http://localhost/agenda_covid/view/index.php) para comenzar!
+Desde la terminal (estando en la carpeta back-end) ejecutar `php artisan serve`
+Desde la terminal (estando en la carpeta front-end) ejecutar `npm start`
+
 
 ## Construido con 🛠️
 
