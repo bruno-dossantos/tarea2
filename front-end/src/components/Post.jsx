@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -38,6 +39,7 @@ export default class Get extends React.Component {
               <button type="submit" className="btn">
                 Ready
               </button>
+              <label style={{ marginLeft: '10px' }}>Mensaje de estado </label>
             </form>
           </div>
         </div>
