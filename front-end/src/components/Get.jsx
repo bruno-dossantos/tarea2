@@ -11,6 +11,7 @@ export default class Get extends React.Component {
   }
 
   componentDidMount() {
+    document.title = 'Get all movies';
     axios.get('http://127.0.0.1:8000/api/pelicula').then((res) => {
       const movies = res.data;
       this.setState({ movies });

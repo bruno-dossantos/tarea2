@@ -7,6 +7,10 @@ export default class Show extends React.Component {
     this.state = {};
   }
 
+  componentDidMount() {
+    document.title = 'Get movie';
+  }
+
   render() {
     return (
       <div id="2" className="section container-fluid">

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import './App.css';
+import './stylesheets/App.css';
 import React from 'react';
-import Router from './Router';
+import Router from './components/Router';
 
 function App() {
   return (
