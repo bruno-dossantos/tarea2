@@ -8,6 +8,10 @@ export default class Get extends React.Component {
     this.state = {};
   }
 
+  componentDidMount() {
+    document.title = 'Post movie';
+  }
+
   render() {
     return (
       <div id="3" className="section container-fluid">

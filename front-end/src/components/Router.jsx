@@ -6,9 +6,9 @@ import {
   Link,
 } from 'react-router-dom';
 
-import Get from './components/Get';
-import Post from './components/Post';
-import Show from './components/Show';
+import Get from './Get';
+import Post from './Post';
+import Show from './Show';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
