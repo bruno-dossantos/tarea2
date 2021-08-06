@@ -46,20 +46,6 @@ Acuerdese de cambiar la extension del archivo a `sql`
 
 Entrar a esta [url](http://localhost/agenda_covid/view/index.php) para comenzar!
 
-## Ejecutando las pruebas ⚙️
-
-Para ejecutar las pruebas debemos ingresar a la web como se explicó al final del punto [Instalación](https://github.com/DosSantosBrunoo/agenda_covid/blob/README/README.md#instalación-)
-1. Agendar a alguien en nuestra tabla `agenda`, por ende nos dirigimos a [Agendar](http://localhost/agenda_covid/view/agendarme.php)\
-Ingresar CI válida(Que dicha CI exista en la tabla `usuario`) e ingresarle telefono al usuario.
-2. Borrar a alguien de nuestra tabla `agenda`, por ende nos dirigimos a [Borrar](http://localhost/agenda_covid/view/borrar.php)\
-Ingresar CI válida(Que dicha CI exista en la tabla `agenda`)
-3. Consultar las dosis de un usuario desde la tabla `agenda`, por ende nos dirigimos a [Consultar](http://localhost/agenda_covid/view/consultar_1.php)\
-Ingresar CI válida(Que dicha CI exista en la tabla `agenda`)
-4. Consultar cantidad de usuarios agendados por grupo desde la tabla `agenda`, por ende nos dirigimos a [Consultar por grupo](http://localhost/agenda_covid/view/consultar_2.php)
-Seleccione grupo de usuarios
-5. Consultar cantidad de usuarios agendados por grupo de edad desde la tabla `agenda`, por ende nos dirigimos a [Consultar por edad](http://localhost/agenda_covid/view/consultar_3.php)\
-Selecciona grupo de edad
-
 ## Construido con 🛠️
 
 * [Bootstrap](https://getbootstrap.com) - El framework de estilos web usado
