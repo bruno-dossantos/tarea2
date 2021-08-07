@@ -75,7 +75,6 @@ li.nav-item {
   background-color: white;
   border-radius: 10px;
   height: 250px;
-  box-shadow: violet;
   box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 20%);
 }
 
@@ -85,8 +84,8 @@ li.nav-item {
   background-color: white;
   border-radius: 10px;
   height: 550px;
-  box-shadow: violet;
   box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 20%);
+  height: auto !important;
 }
 
 .form-group {
