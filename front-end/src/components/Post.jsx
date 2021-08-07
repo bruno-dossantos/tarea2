@@ -54,6 +54,7 @@ function Post() {
               placeholder="Name"
               className="form-control"
               name="name"
+              value={name}
               onChange={handleChangeName}
             />
             {' '}
@@ -63,6 +64,7 @@ function Post() {
               placeholder="Image"
               className="form-control"
               name="img"
+              value={img}
               onChange={handleChangeImg}
             />
             <button type="submit" className="btn">

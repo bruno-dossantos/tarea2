@@ -45,6 +45,7 @@ function Show() {
               placeholder="ID"
               className="form-control"
               name="idMovie"
+              value={id}
               onChange={handleChange}
             />
             {' '}
