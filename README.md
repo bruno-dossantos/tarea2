@@ -49,9 +49,8 @@ Desde la terminal (estando en la carpeta front-end) ejecutar `npm start`
 * CSS - Lenguaje de diseño
 
 ## Autores ✒️
-
 * **Bruno Dos Santos** - *Desarrollador* - [Linkedin](https://www.linkedin.com/in/bruno-dossantos) - [GITHUB](https://github.com/bruno-dossantos)
-* **Ezequiel Padilla** - *Desarrollador* - [Linkedin](https://www.linkedin.com/in/ezequiel-padilla-46804a193/) - [GITHUB](https://github.com/Ezequiel-Padilla)
+* **Ezequiel Padilla** - *Desarrollador* - [Linkedin](https://www.linkedin.com/in/ezequiel-padilla/) - [GITHUB](https://github.com/Ezequiel-Padilla)
 * **Bruno Martinez** - *Desarrollador* - [GITHUB](https://github.com/BrunoMartinez17)
 
 ## Expresiones de Gratitud 🎁
