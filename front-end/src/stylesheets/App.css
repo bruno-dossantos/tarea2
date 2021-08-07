@@ -79,6 +79,21 @@ li.nav-item {
   box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 20%);
 }
 
+.container-form-get-all {
+  flex: 0 0 auto;
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  height: 550px;
+  box-shadow: violet;
+  box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 20%);
+}
+
 .form-group {
   margin-top: 30px;
+}
+
+div img {
+  height: 100px;
+  width: 100px;
 }

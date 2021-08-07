@@ -1,21 +1,18 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable no-alert */
 import React, { useState } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Show() {
-  const [movies, setMovies] = useState([]);
+  const [films, setFilms] = useState([]);
   const [id, setId] = useState('');
-  const [error, setError] = useState('');
 
   const getMovie = async () => {
     try {
-      const response = await axios.get(`http://127.0.0.1:8000/api/pelicula/${id}`);
-      setMovies(response.data.data);
+      const response = await axios.get(`http://127.0.0.1:8000/api/films/${id}`);
+      setFilms(response.data.data);
     } catch (err) {
-      // eslint-disable-next-line no-console
-      console.error('fallo axios', err);
-      setError('Hubo un error al traer el pais');
+      alert(`No existe este id(${err})`);
     }
   };
 
@@ -53,9 +50,8 @@ function Show() {
             <button type="submit" className="btn">
               Ready
             </button>
-            {error}
-            {movies.map((movie) => (
-              <a style={{ marginLeft: '10px' }} key={movie.idPelicula} href={movie.img} target="_blank" rel="noreferrer">{movie.nombre}</a>
+            {films.map((movie) => (
+              <a style={{ marginLeft: '10px' }} key={movie.id} href={movie.img} target="_blank" rel="noreferrer">{movie.name}</a>
             ))}
           </form>
         </div>

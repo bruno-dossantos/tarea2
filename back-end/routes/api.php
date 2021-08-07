@@ -14,10 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
 // Agregamos la siguiente ruta a la API para exponer los endpoint del CRUD
-
-Route::apiResource('/pelicula', App\Http\Controllers\PeliculaController::class);
+Route::apiResource('/films', App\Http\Controllers\MovieController::class);

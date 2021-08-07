@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 import React, { useState } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -5,20 +6,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Post() {
   const [name, setName] = useState('');
   const [img, setImg] = useState('');
-  const [error, setError] = useState('');
 
   const postMovie = async () => {
     try {
-      await axios.post('http://127.0.0.1:8000/api/pelicula', {
-        nombre: name,
+      await axios.post('http://127.0.0.1:8000/api/films', {
+        name: `${name}`,
         img: `${img}`,
       });
       // eslint-disable-next-line no-alert
       alert('Pelicula creada con exito!');
     } catch (err) {
-      // eslint-disable-next-line no-console
-      console.error('fallo axios', err);
-      setError('Hubo un error al traer los paises');
+      alert(`No se puede crear esta pelicula(${err})`);
     }
   };
 
@@ -70,7 +68,6 @@ function Post() {
             <button type="submit" className="btn">
               Ready
             </button>
-            {error}
           </form>
         </div>
       </div>
