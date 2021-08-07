@@ -1,54 +1,50 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Post() {
-  /*   constructor(props) {
-      super(props);
-      this.state = {
-        id: '',
-        img: '',
-      };
-    } */
-
-  const [movie, setMovie] = useState([]);
+  const [name, setName] = useState('');
+  const [img, setImg] = useState('');
   const [error, setError] = useState('');
 
   const postMovie = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:8000/api/pelicula');
-      setPaises(response);
+      await axios.post('http://127.0.0.1:8000/api/pelicula', {
+        nombre: name,
+        img: `${img}`,
+      });
+      // eslint-disable-next-line no-alert
+      alert('Pelicula creada con exito!');
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.error('fallo axios', err);
       setError('Hubo un error al traer los paises');
     }
   };
 
-  /*   componentDidMount() {
-      document.title = 'Get all movies';
-      axios.get('http://127.0.0.1:8000/api/pelicula').then((res) => {
-        const movies = res.data;
-        this.setState({ movies });
-      });
-    } */
-  chageHandler = (e) => {
-    this.setState({ [e.target.id]: e.target.value });
+  const handleChangeName = (event) => {
+    const e = event.target.value;
+    setName(e);
   };
 
-  submitHandler = (e) => {
+  const handleChangeImg = (event) => {
+    const e = event.target.value;
+    setImg(e);
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://127.0.0.1:8000/api/pelicula');
+    postMovie();
+    setName('');
+    setImg('');
   };
 
   return (
     <div id="3" className="section container-fluid">
       <div className="row justify-content-center align-items-center">
         <div className="col-6 container-form">
-          <form onSubmit={this.submitHandler} className="form-group">
-            <h1
-              style={{ textAlign: 'center' }}
-              className="d-flex flex-row justify-content-center"
-            >
+          <form onSubmit={handleSubmit} className="form-group">
+            <h1 style={{ textAlign: 'center' }} className="d-flex flex-row justify-content-center">
               Post movie
             </h1>
             <input
@@ -57,8 +53,8 @@ function Post() {
               type="text"
               placeholder="Name"
               className="form-control"
-              name="nombre"
-              onChange={this.chageHandler}
+              name="name"
+              onChange={handleChangeName}
             />
             {' '}
             <input
@@ -67,11 +63,12 @@ function Post() {
               placeholder="Image"
               className="form-control"
               name="img"
-              onChange={this.chageHandler}
+              onChange={handleChangeImg}
             />
             <button type="submit" className="btn">
               Ready
             </button>
+            {error}
           </form>
         </div>
       </div>

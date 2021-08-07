@@ -4,14 +4,14 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Show() {
-  const [movies, setMovie] = useState([]);
+  const [movies, setMovies] = useState([]);
   const [id, setId] = useState('');
   const [error, setError] = useState('');
 
   const getMovie = async () => {
     try {
       const response = await axios.get(`http://127.0.0.1:8000/api/pelicula/${id}`);
-      setMovie(response.data.data);
+      setMovies(response.data.data);
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error('fallo axios', err);
@@ -56,9 +56,6 @@ function Show() {
             {movies.map((movie) => (
               <a style={{ marginLeft: '10px' }} key={movie.idPelicula} href={movie.img} target="_blank" rel="noreferrer">{movie.nombre}</a>
             ))}
-            {/* <a style={{ marginLeft: '10px' }} href={movie} target="_blank" rel="noreferrer">
-              Image
-            </a> */}
           </form>
         </div>
       </div>
